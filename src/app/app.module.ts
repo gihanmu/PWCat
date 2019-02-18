@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { MatToolbarModule, MatCardModule } from '@angular/material';
+import { ImgCardComponent } from './img-card/img-card.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ImgCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
